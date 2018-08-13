@@ -44,7 +44,7 @@
 // ################ END MANUAL SETTINGS ##########################
 
 #undef FAN_BOARD_PIN
-#define FAN_BOARD_PIN -1
+#define FAN_BOARD_PIN 7
 #define BOARD_FAN_SPEED 255
 #define FAN_THERMO_PIN -1
 #define FAN_THERMO_MIN_PWM 128
@@ -113,7 +113,7 @@
 #define EXT0_DESELECT_COMMANDS ""
 #define EXT0_EXTRUDER_COOLER_PIN 44
 #define EXT0_EXTRUDER_COOLER_SPEED 255
-#define EXT0_DECOUPLE_TEST_PERIOD 12000
+#define EXT0_DECOUPLE_TEST_PERIOD 0
 #define EXT0_JAM_PIN -1
 #define EXT0_JAM_PULLUP 0
 
@@ -157,7 +157,7 @@
 
 // ############# Heated bed configuration ########################
 
-#define HAVE_HEATED_BED 0
+#define HAVE_HEATED_BED 1
 #define HEATED_BED_MAX_TEMP 120
 #define SKIP_M190_IF_WITHIN 3
 #define HEATED_BED_SENSOR_TYPE 1
@@ -280,9 +280,9 @@ It also can add a delay to wait for spindle to run on full speed.
 #define X_HOME_DIR -1
 #define Y_HOME_DIR -1
 #define Z_HOME_DIR 1
-#define X_MAX_LENGTH 200
-#define Y_MAX_LENGTH 200
-#define Z_MAX_LENGTH 268.1
+#define X_MAX_LENGTH 185
+#define Y_MAX_LENGTH 185
+#define Z_MAX_LENGTH 307.3 //307.5
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
@@ -311,7 +311,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define EXACT_DELTA_MOVES 1
 
 // Delta settings
-#define DELTA_DIAGONAL_ROD 229.4 // mm
+#define DELTA_DIAGONAL_ROD 223 // mm
 #define DELTA_ALPHA_A 210
 #define DELTA_ALPHA_B 330
 #define DELTA_ALPHA_C 90
@@ -324,8 +324,8 @@ It also can add a delay to wait for spindle to run on full speed.
 #define END_EFFECTOR_HORIZONTAL_OFFSET 0
 #define CARRIAGE_HORIZONTAL_OFFSET 0
 #define DELTA_MAX_RADIUS 90
-#define ROD_RADIUS 99.8
-#define PRINTER_RADIUS 99.8
+#define ROD_RADIUS 99
+#define PRINTER_RADIUS 99
 #define DELTA_HOME_ON_POWER 0
 #define STEP_COUNTER
 #define DELTA_X_ENDSTOP_OFFSET_STEPS 0
@@ -504,7 +504,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define LANGUAGE_CZ_ACTIVE 0
 #define LANGUAGE_PL_ACTIVE 0
 #define LANGUAGE_TR_ACTIVE 0
-#define UI_PRINTER_NAME "PAR Delta 20170303"
+#define UI_PRINTER_NAME "PAR Delta 20161206"
 #define UI_PRINTER_COMPANY "Anycubic"
 #define UI_PAGES_DURATION 5000
 #define UI_ANIMATION 0
@@ -674,7 +674,7 @@ Values must be in range 1..255
     "zMinPos": 0,
     "xLength": 200,
     "yLength": 200,
-    "zLength": 268.1,
+    "zLength": 297.9,
     "alwaysCheckEndstops": "1",
     "disableX": "0",
     "disableY": "0",
@@ -688,8 +688,8 @@ Values must be in range 1..255
     "zEndstopBack": 5,
     "deltaSegmentsPerSecondPrint": 180,
     "deltaSegmentsPerSecondTravel": 70,
-    "deltaDiagonalRod": 229.4,
-    "deltaHorizontalRadius": 99.8,
+    "deltaDiagonalRod": 217,
+    "deltaHorizontalRadius": 98.5,
     "deltaAlphaA": 210,
     "deltaAlphaB": 330,
     "deltaAlphaC": 90,
@@ -763,7 +763,7 @@ Values must be in range 1..255
     "extrudeMaxLength": 160,
     "homeOrder": "HOME_ORDER_ZXY",
     "featureController": 2,
-    "uiPrinterName": "PAR Delta 20170303",
+    "uiPrinterName": "PAR Delta 20161206",
     "uiPrinterCompany": "Anycubic",
     "uiPagesDuration": 5000,
     "uiAnimation": "0",
@@ -914,7 +914,7 @@ Values must be in range 1..255
     "psOn": "ORIG_PS_ON_PIN",
     "mixingExtruder": "0",
     "decouplingTestMaxHoldVariance": 20,
-    "decouplingTestMinTempRise": 1,
+    "decouplingTestMinTempRise": 0.5,
     "featureAxisComp": "0",
     "axisCompTanXY": 0,
     "axisCompTanXZ": 0,
